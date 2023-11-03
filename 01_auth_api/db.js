@@ -1,9 +1,10 @@
-import { Pool } from "pg";
+import pg from "pg";
+const { Pool } = pg;
 
 export const pool = new Pool({
-  user: "postgres",
-  password: "password",
-  host: "localhost",
-  port: 5432,
-  database: "serverless",
+  user: process.env.DB_USER.trim(),
+  password: process.env.DB_PASSWORD.trim(),
+  host: process.env.DB_HOST.trim(),
+  port: process.env.DB_PORT.trim(),
+  database: process.env.DB_DATABASE.trim(),
 });
