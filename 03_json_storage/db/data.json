@@ -1,0 +1,14 @@
+{
+  "newdata": {
+    "hello": "world",
+    "python": "there"
+  },
+  "user1": {
+    "name": "Bob",
+    "age": 32
+  },
+  "user008": {
+    "name": "Alex",
+    "age": 21
+  }
+}
